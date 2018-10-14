@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giphy API</title>
+
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+<!-- Buttons Start -->
+    <div id="buttonContainer col-lg-12">
+        <button date-comedian="Jemaine Clement" class="btn btn-info">Jemaine Clement</button>
+        <button date-comedian="Bret McKenzie" class="btn btn-info">Bret McKenzie</button>
+        <button date-comedian="Seth Rogan" class="btn btn-info">Seth Rogan</button>
+        <button date-comedian="James Franco" class="btn btn-info">James Franco</button>
+        <button date-comedian="John Mulaney" class="btn btn-info">John Mulaney</button>
+        <button date-comedian="Demetri Martin" class="btn btn-info">Demetri Martin</button>
+        <button date-comedian="Jim Gaffigan" class="btn btn-info">Jim Gaffigan</button>
+        <button date-comedian="Brian Regan" class="btn btn-info">Brian Regan</button>
+        <button date-comedian="Hannibal Buress" class="btn btn-info">Hannibal Buress</button>
+    </div>
+
+
+    <div class="container">
+            <!-- Rendered Buttons will get Dumped Here  -->
+            <div id="buttons-view"></div>
+        
+            <form id="movie-form">
+              <label for="movie-input">Add a Movie, Yo!</label>
+              <input type="text" id="movie-input">
+              <br>
+        
+              <!-- Button triggers new movie to be added -->
+              <input id="add-movie" type="submit" value="Add a Movie, Yo!">
+            </form>
+        
+            <!-- Movies will Get Dumped Here -->
+            <div id="movies-view"></div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
