@@ -7,59 +7,79 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Giphy API</title>
 
+    <link rel="stylesheet" href="style.css">
 
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 
 
 </head>
 
 <body>
-<!-- jQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <header>
+     <h1>Comedian Gifs!</h1>
+ </header>
+
+    <!-- form starts -->
+    <form class="form-inline" id="comedianSearch">
+        <div class="form-group">
+            <label for="comedianInput">Add a comedian!</label>
+            <input type="text" id="comedianInput">
+        </div>
+        <input id="addShow" type="submit" value="submit">
+    </form>
+
+    <!-- Buttons Start -->
+    <div class="row">
+        <div class="container">
+            <div class="btn-group inline pull-left">
+                <button data-comedian="Jemaine Clement" id="show" class="btn btn-info">Jemaine Clement</button>
+                <button data-comedian="Bret McKenzie" id="show" class="btn btn-info">Bret McKenzie</button>
+                <button data-comedian="Seth Rogan" id="show" class="btn btn-info">Seth Rogan</button>
+                <button data-comedian="James Franco" id="show" class="btn btn-info">James Franco</button>
+                <button data-comedian="John Mulaney" id="show" class="btn btn-info">John Mulaney</button>
+                <button data-comedian="Demetri Martin" id="show" class="btn btn-info">Demetri Martin</button>
+                <button data-comedian="Jim Gaffigan" id="show" class="btn btn-info">Jim Gaffigan</button>
+                <button data-comedian="Brian Regan" id="show" class="btn btn-info">Brian Regan</button>
+                <button data-comedian="Hannibal Buress" id="show" class="btn btn-info">Hannibal Buress</button>
+
+            <div id="myButtons"></div>
+            </div> <!--button group-->
+        </div>   <!--container-->
+    </div>  <!--row-->
+    <!-- buttons end -->
 
 
 
-<!-- Buttons Start -->
-    <div id="buttonContainer col-lg-12">
-        <button date-comedian="Jemaine Clement" class="btn btn-info">Jemaine Clement</button>
-        <button date-comedian="Bret McKenzie" class="btn btn-info">Bret McKenzie</button>
-        <button date-comedian="Seth Rogan" class="btn btn-info">Seth Rogan</button>
-        <button date-comedian="James Franco" class="btn btn-info">James Franco</button>
-        <button date-comedian="John Mulaney" class="btn btn-info">John Mulaney</button>
-        <button date-comedian="Demetri Martin" class="btn btn-info">Demetri Martin</button>
-        <button date-comedian="Jim Gaffigan" class="btn btn-info">Jim Gaffigan</button>
-        <button date-comedian="Brian Regan" class="btn btn-info">Brian Regan</button>
-        <button date-comedian="Hannibal Buress" class="btn btn-info">Hannibal Buress</button>
+
+
+
+    <!-- gifs start -->
+    <div class="row">
+        <div class="container">
+           <span><div id="gifs-appear-here"></div></span>
+       </div>
     </div>
+    <!-- gifs end -->
 
 
-    <div class="container">
-            <!-- Rendered Buttons will get Dumped Here  -->
-            <div id="buttons-view"></div>
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript"  src="javascript.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  
         
-            <form id="movie-form">
-              <label for="movie-input">Add a Movie, Yo!</label>
-              <input type="text" id="movie-input">
-              <br>
-        
-              <!-- Button triggers new movie to be added -->
-              <input id="add-movie" type="submit" value="Add a Movie, Yo!">
-            </form>
-        
-            <!-- Movies will Get Dumped Here -->
-            <div id="movies-view"></div>
-    </div>
-
-
-
-
-
-
-
 </body>
 
 </html>
