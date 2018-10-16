@@ -2,11 +2,52 @@ body {
     margin: 20px;
 }
 
-form {
-    float: right;
-}
 
 header {
+    text-align: center;  
+}
+
+h1 {
+    font-size: 65px;
+}
+
+
+#comedianSearch {
+    margin: 0 auto;
     text-align: center;
 }
 
+.comedianGiphy {
+    padding: 5px;
+}
+
+.btn {
+    margin: 5px;
+}
+
+body {
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+form {
+    color: white;
+}
+
+#addCom {
+ color: black;
+}
+
+#comedianInput {
+    color: black;
+    text-align: right;
+}
+
+.butn {
+    color: white;
+}
+
+
+/* cannot get new boxes to align */

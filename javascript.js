@@ -19,7 +19,7 @@ $(document).ready(function() {
         function displayButtons() {
         $("#myButtons").empty();
         for (var i = 0; i < comedians.length; i++) {
-          var a = $('<button class="btn btn-primary">');
+          var a = $('<button class="btn btn-secondary">');
           a.attr("data-comedian", comedians[i]);
           a.text(comedians[i]);
           $("#myButtons").append(a);
@@ -35,7 +35,7 @@ $(document).ready(function() {
           var comedian = $(this).data("comedian");
           console.log(comedian);
       
-          var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + comedian + "&api_key=SzR8GH72ppHulK01VqcC09jcc10UyZoy&limit=1";
+          var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + comedian + "&api_key=SzR8GH72ppHulK01VqcC09jcc10UyZoy&limit=5";
       
           console.log(queryURL);
       
@@ -53,7 +53,7 @@ $(document).ready(function() {
                   var defaultAnimatedSrc = results[i].images.fixed_height.url;
                   var staticSrc = results[i].images.fixed_height_still.url;
                   var showImage = $("<img>");
-                  var p = $("<p>").text("Rating: " + rating);
+                  var p = $("<p class='butn'>").text("Rating: " + rating);
       
                   showImage.attr("src", staticSrc);
                   showImage.addClass("comedianGiphy");
