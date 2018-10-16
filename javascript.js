@@ -35,7 +35,7 @@ $(document).ready(function () {
     var comedian = $(this).data("comedian");
     console.log(comedian);
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + comedian + "&api_key=SzR8GH72ppHulK01VqcC09jcc10UyZoy&limit=5";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + comedian + "&api_key=SzR8GH72ppHulK01VqcC09jcc10UyZoy&limit=10";
 
     console.log(queryURL);
 
